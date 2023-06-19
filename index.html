@@ -1,9 +1,16 @@
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
   <header id="header">
     <nav id="nav-bar">
@@ -15,14 +22,14 @@
           </div>
 
           <div id="title-container">
-            <h1 class="title-custom">Custom</h1>
-            <h1 class="title-boards">Boards</h1>
+            <h1 class="title-custom">CUSTOM</h1>
+            <h1 class="title-boards">BOARDS</h1>
           </div>
         </div>
 
         <div id="nav-anchors">
+          <a class="nav-link" href="#promotionals">Promotionals</a>
           <a class="nav-link" href="#features">Features</a>
-          <a class="nav-link" href="#social-proof">Social-Proof</a>
           <a class="nav-link" href="#faq">FAQ</a>
         </div>
 
@@ -35,18 +42,17 @@
     <section id="promotionals">
       <h2 id="tagline">Precision crafted keyboards</h2>
 
-      <div class="line-break"></div>
-
-      <section id="form-wrapper">
+      <div id="form-wrapper">
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input name="email" id="email" type="email" placeholder="Enter your email address" required>
           <br>
           <input id="submit" type="submit" value="GET STARTED" />
         </form>
-      </section>
+      </div>
+    </section>
 
-      <div id="line-break"></div> <!-- line break -->
 
+    <div id="features-and-testimonials">
       <section id="features">
 
         <div class="feature-text-wrapper">
@@ -55,37 +61,29 @@
           </p>
         </div>
 
-        <div class="line-break"></div> <!-- line break -->
-
         <div class="feature-text-wrapper">
           <h2>Free Shipping</h2>
           <p id="keyboardP1">All purchases that total $50 or more ships for free!
           </p>
         </div>
 
-        <div class="line-break"></div> <!-- line break -->
-
         <div class="feature-text-wrapper">
           <h2>Money Back Guarantee</h2>
           <p id="keyboardP1">If you're not satisfied, send it back and get a full refund!
           </p>
         </div>
-
       </section>
 
-      <div class="line-break"></div> <!-- line break -->
-
-      <section id="social-proof">
+      <section id="testimonials">
         <!-- <p id="testimonials-p">- See what our customers have to say -</p> -->
 
-        <!-- <div class="line-break"></div>  -->
         <div class="quote-container">
           <q class="quote">The best hypothetical keyboards that imaginary money can buy!</q>
           <p class="quote-author">- John Smith</p>
         </div>
 
         <div class="quote-container">
-          <q class="quote">CustomBoards' range of customisation is truly staggering!</q>
+          <q class="quote">This range of customisation is truly staggering!</q>
           <p class="quote-author">- Jane Doe</p>
         </div>
 
@@ -94,42 +92,39 @@
           <p class="quote-author">- Lauren Ipsum</p>
         </div>
       </section>
+    </div>
 
-      <div class="line-break"></div> <!-- line break -->
+    <section id="faq">
+      <h3>Frequently Asked Questions</h3>
 
-      <section id="faq">
-        <h3>Frequently Asked Questions</h3>
+      <p class="faq-question">What is a mechanical keyboard?</p>
+      <p class="faq-answer">A mechanical keyboard typically uses spring activated switches in their keys, as opposed
+        to rubber domes like a lot of other keyboards use.
+        This gives the keys their signature clicky feel but switches can vary wildly in their sensitivity, sound,
+        and feel.
+      </p>
 
-        <div class="line-break"></div> <!-- line break -->
+      <p class="faq-question">Why should I use a mechanical keyboard?</p>
+      <p class="faq-answer">A mechanical keyboard is typically faster, more durable, and more reliable than a
+        keyboard that uses rubber switches. Mechanical keyboards also offer a tactile feedback that can increase
+        your confidence and typing speed.
+      </p>
 
-        <div id="video-text-container">
-          <p class="faq-question">What is a mechanical keyboard?</p>
-          <p class="faq-answer">A mechanical keyboard typically uses spring activated switches in their keys, as opposed
-            to rubber domes like a lot of other keyboards use.
-            This gives the keys their signature clicky feel but switches can vary wildly in their sensitivity, sound,
-            and feel.
-          </p>
+      <p class="faq-question">What switches are for me?</p>
+      <p class="faq-answer">We offer a wide array of possible switches that you can choose from, whether you like
+        loud tactile clicking, or a quieter typing experience.
+        <br>
+        To learn more about what switches you might like
+        best, watch this brief video.
+      </p>
 
-          <p class="faq-question">Why should I use a mechanical keyboard?</p>
-          <p class="faq-answer">A mechanical keyboard is typically faster, more durable, and more reliable than a
-            keyboard that uses rubber switches. Mechanical keyboards also offer a tactile feedback that can increase
-            your confidence and typing speed.
-          </p>
-
-          <p class="faq-question">What switches are for me?</p>
-          <p class="faq-answer">We offer a wide array of possible switches that you can choose from, whether you like
-            loud tactile clicking, or a quieter typing experience.
-            <br>
-            To learn more about what switches you might like
-            best, watch this brief video.
-          </p>
-
+      <div id="video-container-container">
+        <div id="video-container">
           <iframe id="video" src="https://www.youtube.com/embed/rm-WuK_9OBM" frameborder="0" gesture="media"
             allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <div>
-      </section>
-
+        </div>
+      </div>
     </section>
-
   </div>
+
 </body>
